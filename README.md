@@ -1,5 +1,7 @@
 # -Non-FirearmUseAnalysis
 
+Creates a nested list of Firearm/Nonfirearm use in each state sorted in descending order.
+
 Run through homicideanalysis.py
 
 import firearms_class<br />
