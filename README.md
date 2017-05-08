@@ -28,6 +28,6 @@ Same for the Bottom 5 for each state
   -   for item in nonfirearms_data[-5:]:<br />
        (Print into file)
 # OR
-Make it prettier by using this
+Take out punctuations (commas, brackets, etc.) using this
   -   for item in firearms_data[:5]:<br />
          print(item[0], item[1])
