@@ -1,9 +1,8 @@
-#@author: Audie Mendaros cssc0741
 # Rifle, Firearm, Shotgun, Handgun, Gun
 class Firearms:
     state_data = [['Alabama', 0], ['Alaska', 0], ['Arizona', 0], ['Arkansas', 0], ['California', 0],
                   ['Colorado', 0], ['Connecticut', 0], ['Delaware', 0], ['Florida', 0],
-                  ['Georgia', 0],['Hawaii', 0], ['Idaho', 0], ['Illinois', 0], ['Indiana', 0],
+                  ['Georgia', 0], ['Hawaii', 0], ['Idaho', 0], ['Illinois', 0], ['Indiana', 0],
                   ['Iowa', 0], ['Kansas', 0], ['Kentucky', 0], ['Louisiana', 0],
                   ['Maine', 0], ['Maryland', 0], ['Massachusetts', 0], ['Michigan', 0],
                   ['Minnesota', 0], ['Mississippi', 0], ['Missouri', 0], ['Montana', 0],
@@ -19,6 +18,16 @@ class Firearms:
         for homicide in homicide_data:
             self.state = homicide.state
             self.add_firearm_count(homicide.Weapon)
+
+        self.state_data = sorted(self.state_data, key=lambda x: x[1], reverse=True)
+        print('Top 5 cities with firearm-related homicides')
+        for items in self.state_data[:5]:
+            print("{:>10}{:>6}".format(items[0], items[1]))
+        print()
+        print('Bottom 5 cities with firearm-related homicides')
+        for items in self.state_data[-5:]:
+            print("{:>13}{:>4}".format(items[0], items[1]))
+        print()
 
     def add_firearm_count(self, weapon):
         if weapon in ['Rifle', 'Firearm', 'Shotgun', 'Handgun', 'Gun']:
