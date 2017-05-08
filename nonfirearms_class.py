@@ -27,7 +27,7 @@ class Nonfirearms:
             print()
             print('Bottom 5 cities with non firearm-related homicides')
             for items in self.state_data[-5:]:
-                print("{:>13}{:>4}".format(items[0], items[1]))
+                print("{:>12}{:>4}".format(items[0], items[1]))
             print()
 
         def add_nonfirearm_count(self, weapon):
