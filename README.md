@@ -7,10 +7,11 @@ Run through homicideanalysis.py
 import firearms_class<br />
 import nonfirearms_class
 
-Add this to the bottom of the 'main()' function in homicideanalysis.py
+Add all of these to the bottom of the 'main()' function in homicideanalysis.py
   - firearms_class.Firearms(homicide_array)<br />
   - nonfirearms_class.Nonfirearms(homicide_array)<br />
 
+// Since idk how to return a list<br />
 Add these in order to sort the lists in order from highest to lowest of homicide in each state
   - firearms_data = sorted(firearms_class.Firearms.state_data, key=lambda x: x[1], reverse=True)<br />
   - nonfirearms_data = sorted(nonfirearms_class.Nonfirearms.state_data, key=lambda x: x[1], reverse=True)<br />
