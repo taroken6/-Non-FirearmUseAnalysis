@@ -1,3 +1,4 @@
+#@author: Audie Mendaros cssc0741
 # Rifle, Firearm, Shotgun, Handgun, Gun
 class Firearms:
     state_data = [['Alabama', 0], ['Alaska', 0], ['Arizona', 0], ['Arkansas', 0], ['California', 0],
