@@ -7,7 +7,7 @@ Run through homicideanalysis.py
 import firearms_class<br />
 import nonfirearms_class
 
-Add all of these to the bottom of the 'main()' function in homicideanalysis.py
+Add all of these items below to the bottom of the 'main()' function in homicideanalysis.py
   - firearms_class.Firearms(homicide_array)<br />
   - nonfirearms_class.Nonfirearms(homicide_array)<br />
 
@@ -16,7 +16,7 @@ Add these in order to sort the lists in order from highest to lowest of homicide
   - firearms_data = sorted(firearms_class.Firearms.state_data, key=lambda x: x[1], reverse=True)<br />
   - nonfirearms_data = sorted(nonfirearms_class.Nonfirearms.state_data, key=lambda x: x[1], reverse=True)<br />
 
-//I know we're not printing into console but Ima just put this here just incase. 
+//These are for the printing into the text file<br />
     for items in firearms_data[:5]:<br />
            print("{:>10}{:>6}".format(items[0], items[1]))<br />
     print()<br />
