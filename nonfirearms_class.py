@@ -20,6 +20,15 @@ class Nonfirearms:
             for homicide in homicide_data:
                 self.state = homicide.state
                 self.add_nonfirearm_count(homicide.Weapon)
+            self.state_data = sorted(self.state_data, key=lambda x: x[1], reverse=True)
+            print('Top 5 cities with non firearm-related homicides')
+            for items in self.state_data[:5]:
+                print("{:>10}{:>6}".format(items[0], items[1]))
+            print()
+            print('Bottom 5 cities with non firearm-related homicides')
+            for items in self.state_data[-5:]:
+                print("{:>13}{:>4}".format(items[0], items[1]))
+            print()
 
         def add_nonfirearm_count(self, weapon):
             if weapon in ['Blunt Object', 'Strangulation', 'Unknown', 'Knife', 'Fall', 'Drowning', 'Suffocation',
