@@ -17,17 +17,14 @@ Add these in order to sort the lists in order from highest to lowest of homicide
   - nonfirearms_data = sorted(nonfirearms_class.Nonfirearms.state_data, key=lambda x: x[1], reverse=True)<br />
 
 //I know we're not printing into console but Ima just put this here just incase. 
-Incase y'need help to get the top 5 for each state
-  -  for item in firearms_data[:5]:<br />
-       (Print into file)
-  -  for item in  nonfirearms_data[:5]:<br />
-       (Print into file)
-Same for the Bottom 5 for each state
-  -   for item in firearms_data[-5:]:<br />
-       (Print into file)
-  -   for item in nonfirearms_data[-5:]:<br />
-       (Print into file)
-# OR
-Take out punctuations (commas, brackets, etc.) using this
-  -   for item in firearms_data[:5]:<br />
-         print(item[0], item[1])
+    for items in firearms_data[:5]:<br />
+           print("{:>10}{:>6}".format(items[0], items[1]))<br />
+    print()<br />
+    for items in nonfirearms_data[:5]:<br />
+        print("{:>10}{:>6}".format(items[0], items[1]))<br />
+    print()<br />
+    for items in firearms_data[-5:]:<br />
+        print("{:>13}{:>4}".format(items[0], items[1]))<br />
+    print()<br />
+    for items in nonfirearms_data[-5:]:<br />
+        print("{:>13}{:>4}".format(items[0], items[1]))<br />
