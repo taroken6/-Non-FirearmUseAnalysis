@@ -1,3 +1,4 @@
+#@author: Audie Mendaros cssc0741
 #Blunt Object, Strangulation, Unknown, Knife, Fall, Drowning, Suffocation, Explosives, Fire, Poison
 
 class Nonfirearms:
